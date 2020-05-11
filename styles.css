@@ -1,0 +1,261 @@
+/* ==========================================================================
+ * Page structure
+ * ========================================================================== */
+
+body {
+    background: #000;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* ==========================================================================
+ * Typography
+ * ========================================================================== */
+
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    margin: 0 0 16px;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.heading-line {
+    text-align: center;
+}
+
+.heading-line:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 8px;
+    margin: 24px auto 0;
+    background: #ED1E7A;
+}
+
+.heading-subtitle {
+    text-align: center;
+}
+
+.heading-subtitle h1,
+.heading-subtitle h2,
+.heading-subtitle h3 {
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 0 0 24px;
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.mini-text {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.mini-text-line {
+    display: flex;
+    align-items: center;
+    margin: 80px 0 40px;
+    white-space: nowrap;
+}
+
+.mini-text-line:after {
+    content: '';
+    display: block;
+    background: #444;
+    height: 1px;
+    width: 100%;
+    margin-left: 15px;
+}
+
+/* ==========================================================================
+ * Image
+ * ========================================================================== */
+
+img {
+    max-width: 100%;
+}
+
+/* ==========================================================================
+ * Link
+ * ========================================================================== */
+
+a {
+    color: #ED1E7A;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+ * Code
+ * ========================================================================== */
+
+pre {
+	width: calc(100% - 32px);
+	padding: 16px;
+	margin: 32px 0 48px;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 16px;
+	line-height: 24px;
+    background: #222;
+    color: #ED1E7A;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre:hover {
+    background: #ED1E7A;
+    color: #000;
+}
+
+/* ==========================================================================
+ * Icons
+ * ========================================================================== */
+
+.icon {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: flex;
+    background: transparent;
+    border: 0;
+    color: #FFF;
+    padding: 0;
+}
+
+.icon:hover,
+.icon:focus {
+    text-decoration: none;
+}
+
+.icon:before {
+    content: '';
+    display: block;
+    background-image: url('images/icons.svg');
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px; 
+}
+
+.icon-menu:before {
+    background-position: 0 0;
+}
+
+.icon-close:before {
+    background-position: -34px 0;
+}
+
+.icon.secondary {
+    color: #000;
+}
+
+.icon.secondary:before {
+    background-position-y: -32px;
+}
+
+/* ==========================================================================
+ * Elements
+ * ========================================================================== */
+
+/* 
+ * Line Box
+ * -------------------------------------------------------------------------- */
+
+.line-box {
+    outline: 4px solid #ED1E7A;
+    outline-offset: -4px;
+    padding: 24px;
+    margin: 0 0 48px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.line-box:focus,
+.line-box:hover {
+    background: #ED1E7A;
+    color: #000;
+    text-decoration: none;
+}
+
+/* 
+ * Hero Banners
+ * -------------------------------------------------------------------------- */
+
+.hero-banner h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 0 8px 0;
+} 
+ 
+.hero-banner h2 {
+    color: #ED1E7A;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* ==========================================================================
+ * Helpers
+ * ========================================================================== */
+
+.primary-background {
+    background: #ED1E7A;
+}
+
+.solid-box-shadow {
+    box-shadow: 16px 16px 0 0 #ED1E7A;
+}
+
+.highlight {
+    background: #ED1E7A;
+}
+
+.highlight-black-text {
+    background: #ED1E7A;
+    color: #000;
+}
+
+.highlight-black {
+    background: #000;
+    color: #FFF;
+}
